@@ -29,7 +29,10 @@ It requires a regsitered username and server ip.
 ### 3-ssh_config.sh
 ```
 Config file streamline the workflow.
+set permissions to 600: chmod 600 ./3-ssh_config && chmod  600 school
 It automatically uses school key and rejects password auth.
+To use config file from a folder other than root use -F option: ssh -F ./3-ssh_config school.
+
 ```
 
 ### 100-puppet_ssh_config.pp
