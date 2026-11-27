@@ -5,8 +5,5 @@
 set -e
 echo "Script starting..."
 echo
-TARGET=$(grep -v '^#' "$(pwd)/server.sh" | tr -d '[:space:]')
-ssh -i "$(pwd)/school"  "$TARGET"
-echo
-echo "Script ended"
+ssh -i "$(pwd)/school"  dennism@144.217.6.26
 echo
